@@ -11,7 +11,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/product/:id" component={ProductPage} />
+        <Route path="/product/:id" component={ProductPage} />{" "}
+        {/* id for specifying multiple products*/}
         <Route path="/cart" component={CartPage} />
       </Switch>
     </Router>
