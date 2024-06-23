@@ -1,8 +1,9 @@
 // src/components/Navbar.js
-import React from "react";
-import { Link } from "react-router-dom";
 
-const Navbar = () => {
+import React from "react";
+import { Link } from "react-router-dom"; // for hyper links to change pages
+
+function Navbar() {
   return (
     <nav>
       <h1>My Store</h1>
@@ -16,6 +17,6 @@ const Navbar = () => {
       </ul>
     </nav>
   );
-};
+}
 
 export default Navbar;
