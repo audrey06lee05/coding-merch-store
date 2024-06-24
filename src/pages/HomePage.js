@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// product list
 const products = [
   {
     id: 1,
@@ -25,6 +26,7 @@ const products = [
   },
 ];
 
+// display products in homepage
 const HomePage = () => {
   return (
     <div>
