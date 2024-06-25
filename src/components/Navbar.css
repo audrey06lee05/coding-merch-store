@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #f4f3f2;
+  padding: 10px;
+}
+
+a {
+  padding: 5px;
+  padding-right: 19px;
+  text-decoration: none;
+  color: rgb(3, 3, 29);
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+#cart {
+  margin-left: auto;
+  margin-bottom: -5px;
+  margin-top: -5px;
+}
+
+.cart-icon {
+  font-size: 20px;
+}
+
+a:hover {
+  color: rgb(216, 217, 217);
+}

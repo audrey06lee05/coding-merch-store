@@ -1,26 +1,32 @@
 // src/components/Navbar.js
 import React from "react";
 import { Link } from "react-router-dom"; // for hyper links to change pages
+import "./Navbar.css";
+import { IoCartOutline } from "react-icons/io5"; //cart icon
 
 // links to pages
 const Navbar = () => {
   return (
-    <nav>
-      <h3>
+    <nav className="navbar">
+      <a>
         <Link to="/">Home</Link>
-      </h3>
-      <h3>
+      </a>
+
+      <a>
         <Link to="/product">Products</Link>
-      </h3>
-      <h3>
+      </a>
+
+      <a>
         <Link to="/about">About</Link>
-      </h3>
-      <h3>
+      </a>
+
+      <a>
         <Link to="/contact">Contact</Link>
-      </h3>
-      <h3>
-        <Link to="/cart">Cart</Link>
-      </h3>
+      </a>
+
+      <Link to="/cart" className="nav-link" id="cart">
+        <IoCartOutline className="cart-icon" />
+      </Link>
     </nav>
   );
 };
