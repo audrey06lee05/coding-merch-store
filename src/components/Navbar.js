@@ -6,18 +6,21 @@ import { Link } from "react-router-dom"; // for hyper links to change pages
 const Navbar = () => {
   return (
     <nav>
-      <h1>My Store</h1>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/product">Products</Link>
-        </li>
-        <li>
-          <Link to="/cart">Cart</Link>
-        </li>
-      </ul>
+      <h3>
+        <Link to="/">Home</Link>
+      </h3>
+      <h3>
+        <Link to="/product">Products</Link>
+      </h3>
+      <h3>
+        <Link to="/about">About</Link>
+      </h3>
+      <h3>
+        <Link to="/contact">Contact</Link>
+      </h3>
+      <h3>
+        <Link to="/cart">Cart</Link>
+      </h3>
     </nav>
   );
 };

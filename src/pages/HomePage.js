@@ -59,20 +59,43 @@ const products = [
 const HomePage = () => {
   return (
     <div>
-      <h2>Products</h2>
-      <div>
-        {products.map((product) => (
-          <div key={product.id}>
-            <Link to={`/product/${product.id}`}>
-              <img
-                src={product.img}
-                style={{ width: "200px", height: "auto" }}
-              />
-              <h3>{product.name}</h3>
-            </Link>
-            <p>USD{product.price}</p>
-          </div>
-        ))}
+      <div className="header">
+        <h2>Welcome to Hubble In Orbit</h2>
+        <h1>Discover Coding Merchandise</h1>
+        <button>Shop Now</button>
+      </div>
+      <div className="featured-collection">
+        <h2>Featured Collection</h2>
+        <div className="product-cards">
+          <Link to={`/product/${products[4].id}`}>
+            <img
+              src={product5Image}
+              style={{ width: "200px", height: "auto" }}
+            />
+          </Link>
+          <Link to={`/product/${products[5].id}`}>
+            <img
+              src={product6Image}
+              style={{ width: "200px", height: "auto" }}
+            />
+          </Link>
+          <Link to={`/product/${products[2].id}`}>
+            <img
+              src={product3Image}
+              style={{ width: "200px", height: "auto" }}
+            />
+          </Link>
+        </div>
+        <button>Shop Now</button>
+      </div>
+      <div className="Footer">
+        <h3>
+          <Link to="/about">About</Link>
+        </h3>
+        <h3>
+          <Link to="/contact">Contact</Link>
+        </h3>
+        <footer>© Hubble in Orbit 2024, All Rights Reserved</footer>
       </div>
     </div>
   );
