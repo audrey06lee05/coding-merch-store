@@ -5,6 +5,12 @@ import ProductPage from "./pages/ProductPage";
 import CartPage from "./pages/CartPage";
 import Navbar from "./components/Navbar";
 
+//check components
+console.log(HomePage);
+console.log(ProductPage);
+console.log(CartPage);
+console.log(Navbar);
+
 function App() {
   return (
     <Router>

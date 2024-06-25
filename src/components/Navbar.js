@@ -1,9 +1,9 @@
 // src/components/Navbar.js
-
 import React from "react";
 import { Link } from "react-router-dom"; // for hyper links to change pages
 
-function Navbar() {
+// links to pages
+const Navbar = () => {
   return (
     <nav>
       <h1>My Store</h1>
@@ -20,6 +20,6 @@ function Navbar() {
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;
