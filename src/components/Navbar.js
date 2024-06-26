@@ -24,7 +24,7 @@ const Navbar = () => {
         <Link to="/contact">Contact</Link>
       </a>
 
-      <Link to="/cart" className="nav-link" id="cart">
+      <Link to="/cart" id="cart">
         <IoCartOutline className="cart-icon" />
       </Link>
     </nav>

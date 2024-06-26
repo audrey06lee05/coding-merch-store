@@ -8,6 +8,7 @@ import product4Image from "../Img/FEBE_grey_hoodie_front.JPG";
 import product5Image from "../Img/FEBE_navy_hoodie_front.JPG";
 import product6Image from "../Img/SWE_black_tshirt.JPG";
 import product7Image from "../Img/FEBE_black_tshirt_front.JPG";
+import "./HomePage.css";
 
 // product list
 const products = [
@@ -59,44 +60,49 @@ const products = [
 const HomePage = () => {
   return (
     <div>
-      <div className="header">
-        <h2>Welcome to Hubble In Orbit</h2>
-        <h1>Discover Coding Merchandise</h1>
-        <button>Shop Now</button>
-      </div>
-      <div className="featured-collection">
-        <h2>Featured Collection</h2>
-        <div className="product-cards">
-          <Link to={`/product/${products[4].id}`}>
-            <img
-              src={product5Image}
-              style={{ width: "200px", height: "auto" }}
-            />
-          </Link>
-          <Link to={`/product/${products[5].id}`}>
-            <img
-              src={product6Image}
-              style={{ width: "200px", height: "auto" }}
-            />
-          </Link>
-          <Link to={`/product/${products[2].id}`}>
-            <img
-              src={product3Image}
-              style={{ width: "200px", height: "auto" }}
-            />
-          </Link>
+      <header className="header">
+        <div className="header-content">
+          <p id="welcome-text">Welcome to Hubble In Orbit</p>
+          <h1>Discover Coding Merchandise</h1>
+          <p>Start your stylish merch store experience</p>
+          <button>Shop Now</button>
         </div>
-        <button>Shop Now</button>
-      </div>
-      <div className="Footer">
+      </header>
+      <section>
+        <div className="featured-collection">
+          <h2>Featured Collection</h2>
+          <div className="product-cards">
+            <Link to={`/product/${products[4].id}`}>
+              <img
+                src={product5Image}
+                style={{ width: "200px", height: "auto" }}
+              />
+            </Link>
+            <Link to={`/product/${products[5].id}`}>
+              <img
+                src={product6Image}
+                style={{ width: "200px", height: "auto" }}
+              />
+            </Link>
+            <Link to={`/product/${products[2].id}`}>
+              <img
+                src={product3Image}
+                style={{ width: "200px", height: "auto" }}
+              />
+            </Link>
+          </div>
+          <button>Shop Now</button>
+        </div>
+      </section>
+      <footer>
         <h3>
           <Link to="/about">About</Link>
         </h3>
         <h3>
           <Link to="/contact">Contact</Link>
         </h3>
-        <footer>© Hubble in Orbit 2024, All Rights Reserved</footer>
-      </div>
+        <p>© Hubble in Orbit 2024, All Rights Reserved</p>
+      </footer>
     </div>
   );
 };
