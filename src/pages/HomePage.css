@@ -38,3 +38,8 @@
   width: auto;
   height: auto;
 }
+
+.header-content button:hover {
+  background-color: rgb(15, 15, 89);
+  color: rgb(240, 245, 247);
+}
