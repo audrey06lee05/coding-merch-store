@@ -65,9 +65,14 @@ const HomePage = () => {
           <p id="welcome-text">Welcome to Hubble In Orbit</p>
           <h1>Discover Coding Merchandise</h1>
           <p>Start your stylish merch store experience</p>
-          <Link to="/product">
-            <button>Shop Now</button>
-          </Link>
+          <div className="header-content-btns">
+            <Link to="/product">
+              <button>Shop Now</button>
+            </Link>
+            <Link to="/about">
+              <button>Learn More</button>
+            </Link>
+          </div>
         </div>
       </header>
       <section>

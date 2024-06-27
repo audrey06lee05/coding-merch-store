@@ -7,6 +7,7 @@
 .header-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -25,16 +26,25 @@
   margin-bottom: 1%;
 }
 
+.header-content .header-content-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+  margin: 2%;
+}
+
 .header-content button {
+  display: flex;
+  flex-direction: row;
   font-weight: bold;
   color: rgb(15, 15, 89);
   border-radius: 8px;
   border-color: transparent;
   background: rgb(240, 245, 247);
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 10%;
+  white-space: nowrap;
   width: auto;
   height: auto;
 }
@@ -42,4 +52,14 @@
 .header-content button:hover {
   background-color: rgb(15, 15, 89);
   color: rgb(240, 245, 247);
+}
+
+.featured-collection h2 {
+  font-size: 300%;
+  margin: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
