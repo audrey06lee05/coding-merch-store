@@ -54,6 +54,10 @@
   color: rgb(240, 245, 247);
 }
 
+.section {
+  background-color: #f4f3f2;
+}
+
 .featured-collection h2 {
   font-size: 300%;
   margin: 1%;
@@ -62,4 +66,14 @@
   justify-content: center;
   text-align: center;
   align-items: center;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
 }

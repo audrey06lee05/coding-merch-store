@@ -8,7 +8,7 @@ import product4Image from "../Img/FEBE_grey_hoodie_front.JPG";
 import product5Image from "../Img/FEBE_navy_hoodie_front.JPG";
 import product6Image from "../Img/SWE_black_tshirt.JPG";
 import product7Image from "../Img/FEBE_black_tshirt_front.JPG";
-import "./HomePage.css";
+import "./style.css";
 
 // product list
 const products = [
