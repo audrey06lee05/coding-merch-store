@@ -78,6 +78,10 @@ const HomePage = () => {
       <section>
         <div className="featured-collection">
           <h2>Featured Collection</h2>
+          <p>
+            Explore our curated collections of trending merchandise. <br />
+            Each piece is designed with style and professionalism.
+          </p>
           <div className="product-cards">
             <Link to={`/product/${products[4].id}`}>
               <img
@@ -98,17 +102,19 @@ const HomePage = () => {
               />
             </Link>
           </div>
-          <button>Shop Now</button>
+          <button className="featured-collection-btn">Shop Now</button>
         </div>
       </section>
       <footer>
-        <h3>
-          <Link to="/about">About</Link>
-        </h3>
-        <h3>
-          <Link to="/contact">Contact</Link>
-        </h3>
-        <p>© Hubble in Orbit 2024, All Rights Reserved</p>
+        <div className="footer-content">
+          <h3>
+            <Link to="/about">About</Link>
+          </h3>
+          <h3>
+            <Link to="/contact">Contact</Link>
+          </h3>
+          <p id="copyright">© Hubble in Orbit 2024, All Rights Reserved</p>
+        </div>
       </footer>
     </div>
   );
