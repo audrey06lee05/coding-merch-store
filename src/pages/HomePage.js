@@ -1,6 +1,7 @@
 // src/pages/HomePage.js
 import React from "react";
 import { Link } from "react-router-dom";
+import ProductCard from "../components/ProductCard";
 import product1Image from "../Img/SWE_black_hoodie.JPG";
 import product2Image from "../Img/SWE_navy_hoodie.JPG";
 import product3Image from "../Img/FEBE_black_hoodie_front.JPG";
@@ -10,7 +11,6 @@ import product6Image from "../Img/SWE_black_tshirt.JPG";
 import product7Image from "../Img/FEBE_black_tshirt_front.JPG";
 import "./style.css";
 
-// product list
 const products = [
   {
     id: 1,
@@ -56,7 +56,6 @@ const products = [
   },
 ];
 
-// display products in homepage
 const HomePage = () => {
   return (
     <div>
@@ -75,46 +74,27 @@ const HomePage = () => {
           </div>
         </div>
       </header>
-      <section>
-        <div className="featured-collection">
-          <h2>Featured Collection</h2>
-          <p>
-            Explore our curated collections of trending merchandise. <br />
-            Each piece is designed with style and professionalism.
-          </p>
-          <div className="product-cards">
-            <Link to={`/product/${products[4].id}`}>
-              <img
-                src={product5Image}
-                style={{ width: "200px", height: "auto" }}
-              />
-            </Link>
-            <Link to={`/product/${products[5].id}`}>
-              <img
-                src={product6Image}
-                style={{ width: "200px", height: "auto" }}
-              />
-            </Link>
-            <Link to={`/product/${products[2].id}`}>
-              <img
-                src={product3Image}
-                style={{ width: "200px", height: "auto" }}
-              />
-            </Link>
-          </div>
-          <button className="featured-collection-btn">Shop Now</button>
+      <section className="featured-collection">
+        <h2>Featured Collection</h2>
+        <p>
+          Explore our curated collections of trending merchandise. <br />
+          Each piece is designed with style and professionalism.
+        </p>
+        <div className="product-cards">
+          <ProductCard product={products[4]} />
+          <ProductCard product={products[5]} />
+          <ProductCard product={products[2]} />
         </div>
+        <button className="featured-collection-btn">Shop Now</button>
       </section>
-      <footer>
-        <div className="footer-content">
-          <h3>
-            <Link to="/about">About</Link>
-          </h3>
-          <h3>
-            <Link to="/contact">Contact</Link>
-          </h3>
-          <p id="copyright">© Hubble in Orbit 2024, All Rights Reserved</p>
-        </div>
+      <footer className="footer-content">
+        <h3>
+          <Link to="/about">About</Link>
+        </h3>
+        <h3>
+          <Link to="/contact">Contact</Link>
+        </h3>
+        <p id="copyright">© Hubble in Orbit 2024, All Rights Reserved</p>
       </footer>
     </div>
   );
