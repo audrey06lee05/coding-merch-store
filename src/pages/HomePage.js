@@ -87,17 +87,6 @@ const HomePage = () => {
         </div>
         <button className="featured-collection-btn">Shop Now</button>
       </section>
-      <footer className="footer-content">
-        <div className="footer-links">
-          <h3>
-            <Link to="/about">About</Link>
-          </h3>
-          <h3>
-            <Link to="/contact">Contact</Link>
-          </h3>
-        </div>
-        <p id="copyright">© Hubble in Orbit 2024, All Rights Reserved</p>
-      </footer>
     </div>
   );
 };

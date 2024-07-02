@@ -113,31 +113,3 @@
   color: rgb(15, 15, 89);
   cursor: pointer;
 }
-
-.footer-content {
-  background-color: rgb(15, 15, 89);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  padding: 1%;
-}
-
-.footer-links {
-  display: flex;
-  gap: 15px;
-}
-
-.footer-content h3 a {
-  color: #f4f3f2;
-  text-decoration: none;
-}
-
-.footer-content h3 a:hover {
-  text-decoration: underline;
-}
-
-#copyright {
-  font-size: 70%;
-  color: rgb(160, 165, 167);
-}

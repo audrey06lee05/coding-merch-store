@@ -6,14 +6,7 @@ import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
 import CartPage from "./pages/CartPage";
 import Navbar from "./components/Navbar";
-
-//check components
-console.log(HomePage);
-console.log(ProductPage);
-console.log(AboutPage);
-console.log(ContactPage);
-console.log(CartPage);
-console.log(Navbar);
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -27,6 +20,7 @@ function App() {
         <Route path="/contact" component={ContactPage} />
         <Route path="/cart" component={CartPage} />
       </Switch>
+      <Footer />
     </Router>
   );
 }
