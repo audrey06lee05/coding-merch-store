@@ -8,23 +8,19 @@ import { IoCartOutline } from "react-icons/io5"; //cart icon
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <a>
-        <Link to="/">Home</Link>
-      </a>
-
-      <a>
-        <Link to="/product">Products</Link>
-      </a>
-
-      <a>
-        <Link to="/about">About</Link>
-      </a>
-
-      <a>
-        <Link to="/contact">Contact</Link>
-      </a>
-
-      <Link to="/cart" id="cart">
+      <Link to="/" className="nav-link">
+        Home
+      </Link>
+      <Link to="/product" className="nav-link">
+        Products
+      </Link>
+      <Link to="/about" className="nav-link">
+        About
+      </Link>
+      <Link to="/contact" className="nav-link">
+        Contact
+      </Link>
+      <Link to="/cart" id="cart" className="nav-link">
         <IoCartOutline className="cart-icon" />
       </Link>
     </nav>
