@@ -59,22 +59,20 @@ const products = [
 const HomePage = () => {
   return (
     <div>
-      <header className="header">
-        <div className="header-content">
-          <p id="welcome-text">Welcome to Hubble In Orbit</p>
-          <h1>Discover Coding Merchandise</h1>
-          <p>Start your stylish merch store experience</p>
-          <div className="header-content-btns">
-            <Link to="/product">
-              <button>Shop Now</button>
-            </Link>
-            <Link to="/about">
-              <button>Learn More</button>
-            </Link>
-          </div>
+      <header>
+        <p className="welcome-text">Welcome to Hubble In Orbit</p>
+        <h1>Discover Coding Merchandise</h1>
+        <p className="header-text">Start your stylish merch store experience</p>
+        <div className="header-content-btns">
+          <Link to="/product">
+            <button>Shop Now</button>
+          </Link>
+          <Link to="/about">
+            <button>Learn More</button>
+          </Link>
         </div>
       </header>
-      <section className="featured-collection">
+      <section>
         <h2>Featured Collection</h2>
         <p>
           Explore our curated collections of trending merchandise. <br />
@@ -85,7 +83,9 @@ const HomePage = () => {
           <ProductCard product={products[5]} />
           <ProductCard product={products[2]} />
         </div>
-        <button className="featured-collection-btn">Shop Now</button>
+        <div className="featured-collection-btn">
+          <button>Shop Now</button>
+        </div>
       </section>
     </div>
   );

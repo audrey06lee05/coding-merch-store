@@ -1,12 +1,9 @@
 /* style.css */
 
-.header {
+header {
   background-image: linear-gradient(to right, lightblue, darkblue);
   color: #f4f3f2;
   padding: 10%;
-}
-
-.header-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,16 +11,21 @@
   text-align: center;
 }
 
-#welcome-text {
+header .welcome-text {
   border: 1px solid rgb(194, 206, 246);
+  color: #f4f3f2;
   border-radius: 30px;
   padding: 5px;
   font-size: 10px;
 }
 
-.header-content h1 {
+header h1 {
   font-size: 350%;
   margin: 1%;
+}
+
+header .header-text {
+  color: #f4f3f2;
 }
 
 .header-content-btns {
@@ -34,7 +36,7 @@
   margin: 2%;
 }
 
-.header-content button {
+.header-content-btns button {
   font-weight: bold;
   color: rgb(15, 15, 89);
   border-radius: 8px;
@@ -44,16 +46,13 @@
   white-space: nowrap;
 }
 
-.header-content button:hover {
+.header-content-btns button:hover {
   background-color: rgb(15, 15, 89);
   color: #f4f3f2;
 }
 
-.section {
+section {
   background-color: #f4f3f2;
-}
-
-.featured-collection {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,17 +60,13 @@
   text-align: center;
 }
 
-.featured-collection h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+section h2 {
   font-size: 300%;
   margin: 7%;
   margin: 2%;
 }
 
-.featured-collection p {
+section p {
   font-size: 80%;
   margin: 2%;
   margin-top: 1%;
@@ -81,14 +76,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 35px;
   margin-top: 2%;
+}
+
+.product-card-comp {
+  text-align: center; /* Ensures text content is centered */
+  width: 200px; /* Adjust width as needed */
+  max-width: 100%; /* Ensure it doesn't exceed container width */
 }
 
 .product-cards img {
   border: 2px solid rgb(216, 217, 217);
   border-radius: 10%;
-  padding: 10%;
+  width: 100%;
 }
 
 .product-cards img:hover {
@@ -96,19 +98,26 @@
 }
 
 .featured-collection-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-collection-btn button {
   font-weight: bold;
   color: #f4f3f2;
   border-radius: 8px;
   border-color: transparent;
   background: rgb(15, 15, 89);
-  padding: 1%;
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  padding: 10%;
+  white-space: nowrap;
 }
 
-.featured-collection-btn:hover {
+.featured-collection-btn button:hover {
   background-color: #f4f3f2;
   color: rgb(15, 15, 89);
   cursor: pointer;
