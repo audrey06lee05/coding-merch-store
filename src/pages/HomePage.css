@@ -1,9 +1,5 @@
 /* style.css */
 
-* {
-  overflow-x: hidden !important;
-}
-
 .header {
   background-image: linear-gradient(to right, lightblue, darkblue);
   color: #f4f3f2;
@@ -78,6 +74,7 @@
 .featured-collection p {
   font-size: 80%;
   margin: 2%;
+  margin-top: 1%;
 }
 
 .product-cards {
@@ -105,8 +102,8 @@
   border-color: transparent;
   background: rgb(15, 15, 89);
   padding: 1%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -120,14 +117,15 @@
 .footer-content {
   background-color: rgb(15, 15, 89);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   padding: 1%;
 }
 
-.footer-content h3 {
-  color: #f4f3f2;
+.footer-links {
+  display: flex;
+  gap: 15px;
 }
 
 .footer-content h3 a {

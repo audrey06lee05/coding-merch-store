@@ -9,7 +9,7 @@ import product4Image from "../Img/FEBE_grey_hoodie_front.JPG";
 import product5Image from "../Img/FEBE_navy_hoodie_front.JPG";
 import product6Image from "../Img/SWE_black_tshirt.JPG";
 import product7Image from "../Img/FEBE_black_tshirt_front.JPG";
-import "./style.css";
+import "./HomePage.css";
 
 const products = [
   {
@@ -88,12 +88,14 @@ const HomePage = () => {
         <button className="featured-collection-btn">Shop Now</button>
       </section>
       <footer className="footer-content">
-        <h3>
-          <Link to="/about">About</Link>
-        </h3>
-        <h3>
-          <Link to="/contact">Contact</Link>
-        </h3>
+        <div className="footer-links">
+          <h3>
+            <Link to="/about">About</Link>
+          </h3>
+          <h3>
+            <Link to="/contact">Contact</Link>
+          </h3>
+        </div>
         <p id="copyright">© Hubble in Orbit 2024, All Rights Reserved</p>
       </footer>
     </div>
